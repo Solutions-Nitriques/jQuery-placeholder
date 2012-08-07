@@ -110,9 +110,7 @@
 					
 				case 'enable':
 					enable = true;
-					return this;
-					
-				default: 
+					break;
 			
 			}
 			
