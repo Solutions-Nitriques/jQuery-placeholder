@@ -61,7 +61,7 @@
 				// if no value entered
 				if (!t.val()) {
 					// set ph text
-					t.val(ph);
+					t.val(ph).addClass(PH);
 				}
 			},
 			
@@ -72,7 +72,8 @@
 				// if placeholder is the value
 				if (t.val() == ph) {
 					// clear value
-					t.val('');
+					t.val('').removeClass(PH);
+					
 				}
 			},
 			
@@ -94,7 +95,7 @@
 				if (ph && t.length) {
 					// set the ph text
 					if (!enable || !t.val()) {
-						t.val(ph);
+						t.val(ph).addClass(PH);
 					}
 					
 					// hook events
